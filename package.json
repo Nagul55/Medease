@@ -1,0 +1,14 @@
+{
+  "name": "medease",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:web": "cd apps/web && npm run dev",
+    "dev:api": "cd apps/api && uvicorn main:app --reload --port 8000",
+    "build:web": "cd apps/web && npm run build",
+    "start:web": "cd apps/web && npm run start"
+  },
+  "workspaces": [
+    "apps/*"
+  ]
+}
